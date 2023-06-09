@@ -84,8 +84,9 @@ public class Figuras {
         this.apotema = apotema;
     }
 
-    private void volumen_cono_(){
+    public void volumen_cono_(){
         double volumen_Cono = (1/3)*Math.PI*getRadio()*getRadio()*getAltura();
+        System.out.println(volumen_Cono);
     }
 
     private void area_cono(){

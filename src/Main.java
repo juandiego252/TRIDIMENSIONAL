@@ -5,6 +5,7 @@ public class Main {
         Scanner input = new Scanner(System.in);
         Figuras cono = new Figuras(0,0,0,0,0,0,0);
         float radio_cono;
+        float altura_cono;
         int opcion = 0;
         do {
             System.out.println("---- MENU ----");
@@ -20,8 +21,11 @@ public class Main {
                 case 1:
                     System.out.println("Ingrese radio:");
                     radio_cono = input.nextFloat();
-                    cono.setAltura(radio_cono);
-                    cono.imprimir_datos_cono();
+                    cono.setRadio(radio_cono);
+                    System.out.println("Ingrese la altura:");
+                    altura_cono = input.nextFloat();
+                    cono.setAltura(altura_cono);
+                    cono.volumen_cono_();
                     break;
                 case 2:
                     break;
